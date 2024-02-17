@@ -1,0 +1,4 @@
+RewriteEngine On
+# .* = Все запросы будут направляться в папку public
+# и в переменную $1
+RewriteRule (.*) public/$1
