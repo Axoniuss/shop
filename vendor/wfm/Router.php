@@ -60,13 +60,13 @@ class Router
         }
         return false;
     }
-    // CamelCase
+    //CamelCase
     protected static function upperCamelCase($name): string
     {
         return str_replace(' ', '', ucwords(str_replace('-', ' ', $name)));
     }
 
-    // camelCase
+    //camelCase
     protected static function lowerCamelCase($name): string
     {
         return lcfirst(self::upperCamelCase($name));
